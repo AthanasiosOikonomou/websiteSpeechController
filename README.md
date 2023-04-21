@@ -7,7 +7,7 @@ Examples of commands are: "scroll down", "scroll up", "repeat", "again", "more",
 
 When the javascript script is included in a website a small microphone icon is appeared in the upper right corner. In order to be activated/deactivated the user must click it.  For security reasons, this activation/deactivation affects only the selected page and not all the pages of the website. For example, "www.website.com/index.html" and "www.website.com/about.html" need different activation/deactivation.  
 
-Demo available at [link](https://athanasiosoikonomou.github.io/websiteSpeechController/demo).
+Demo available at [link](https://athanoiko.github.io/websiteSpeechController/demo).
 
 # How to use it
 Include at the end of the html file that you want to activate the speech recognition the following code. Web speech controller uses [jquery](https://jquery.com/) in order to identify the DOM elements and the eventsimulation.js library in order to simulate all the user's keyboard and mouse behavior. 
