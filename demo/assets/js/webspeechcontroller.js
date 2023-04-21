@@ -487,24 +487,24 @@ document.getElementById("webSpeechWidget").onclick = function() {
                      }
                      }*/
                     if (elementName === "play") {
-                        $("video").filter(function() {
+                        $("#video").filter(function() {
                             return appear(this);
-                        })[nextVideo].play();
+                        }).get(nextVideo).play();
                     } else if (elementName === "pause") {
-                        $("video").filter(function() {
+                        $("#video").filter(function() {
                             return appear(this);
-                        })[nextVideo].pause();
+                        }).get(nextVideo).pause();
                     } else if (elementName === "next") {
                         nextVideo = nextVideo + 1;
-                        $("video").filter(function() {
+                        $("#video").filter(function() {
                             return appear(this);
-                        })[nextVideo].play();
+                        }).get(nextVideo).play();
                         if (nextVideo === videoAppearedBufferSrc.length) {
                             nextVideo = 0;
                         }
                     } else if (elementName === "mute") {
                         for (i = 0; i < videos; i++) {
-                            $("video").prop("muted", true);
+                            $("#video").get(nextVideo).prop("muted", true);
                         }
                     }
                     break;
